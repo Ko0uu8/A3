@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  run_soul_workflow:
+  run_A3_workflow:
     docker:
       - image: circleci/python:3.10  # Use an appropriate Python image
     working_directory: ~/repo
@@ -38,4 +38,4 @@ workflows:
               only:
                 - main
     jobs:
-      - run_soul_workflow
+      - run_A3_workflow
